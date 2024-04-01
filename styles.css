@@ -23,7 +23,8 @@ h1 {
     max-width: 50%;
     margin: 40px auto;
     
-}
+    }
+
 .contenido h2{
     font-family: "Bungee Spice", system-ui;
     font-weight: 300;
@@ -57,12 +58,9 @@ h1 {
     position: relative;
     z-index: 0;
     }
-
 .inter{
     display: flex;
-    }
-    
-
+    }   
 .inter h2{
     font-family: "Bungee Spice", system-ui;
     font-weight: 300;
@@ -98,21 +96,29 @@ h1 {
 }
  
 .Clue {
-    background-color: #4CAF50; /* Color de fondo para el botón Clue */
-    color: white; /* Color del texto */
+    font-family: "Bungee Spice", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    
+    background-color: rgb(4, 69, 69); /* Color de fondo para el botón Clue */
     padding: 10px 20px; /* Espaciado interior */
     border: none; /* Sin borde */
     border-radius: 5px; /* Bordes redondeados */
     font-size: 16px; /* Tamaño del texto */
+    text-align: center
 }
 
 .Ad {
-    background-color: #008CBA; /* Color de fondo para el botón Adivina quien */
-    color: white; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interior */
+    font-family: "Bungee Spice", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    background-color:rgb(4, 69, 69); /* Color de fondo para el botón Adivina quien */
+     /* Color del texto */
+    padding: 10px 20px; Espaciado interior
     border: none; /* Sin borde */
     border-radius: 5px; /* Bordes redondeados */
     font-size: 16px; /* Tamaño del texto */
+    text-align: center
 }
 
 /* Estilos para el color de fondo alternativo cuando se hace clic en el botón Clue */
