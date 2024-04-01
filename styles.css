@@ -15,7 +15,7 @@ body {
     font-family: "Bungee Spice", cursive; 
     font-weight: 400; 
 
-    background-color: #3407ff; 
+    background-color: #0f0638; 
     padding: 20px 40px; 
     border-radius: 10px; 
     text-align: center;
@@ -25,18 +25,34 @@ body {
     
 }
 .contenido p{
-    font-family: "Bungee Spice", sans-serif;
+    font-family: "Nabla", system-ui;
     font-weight: 400;
     font-style: normal;
+    
 
+    background-color: rgb(16, 17, 17);
     padding: 20px 40px; 
     border-radius: 10px; 
     text-align: justify;
     box-shadow: 5px 5px 10px rgba(190, 230, 14, 0.2);
-    background-color: rgb(16, 17, 17);
+    
     border-radius: 30px;
     max-width: 30%;
     margin: 30px 40px;
-   
-}
+    }
 
+    .mi-articulo {
+        
+    }
+
+ 
+
+    .nabla-<uniquifier> {
+      font-family: "Nabla", system-ui;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings:
+        "EDPT" 94,
+        "EHLT" 5;
+    }
