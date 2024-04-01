@@ -1,0 +1,13 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/imagenes/juego.jpeg); 
+    background-size: cover;
+    background-position: center; 
+    font-family: Arial, sans-serif;
+}
+
+.contenido {
+    /* Estilos para el contenido de tu página */
+}
