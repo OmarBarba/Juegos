@@ -11,7 +11,7 @@ body {
 }
 
 
-.contenido h1 {
+h1 {
     font-family: "Bungee Spice", cursive; 
     font-weight: 400; 
 
@@ -24,35 +24,55 @@ body {
     margin: 40px auto;
     
 }
-.contenido p{
-    font-family: "Nabla", system-ui;
-    font-weight: 400;
+.contenido h2{
+    font-family: "Bungee Spice", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
     font-style: normal;
-    
 
-    background-color: rgb(16, 17, 17);
+    background-color: rgb(4, 69, 69);
     padding: 20px 40px; 
     border-radius: 10px; 
     text-align: justify;
-    box-shadow: 5px 5px 10px rgba(190, 230, 14, 0.2);
+        
+    border-radius: 30px;
+    max-width: 30%;
+    margin: 30px 40px;
+
+}
+.contenido p{
+    font-family: "Bungee Spice", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    background-color: rgb(4, 69, 69);
+    padding: 20px 40px; 
+    border-radius: 10px; 
+    text-align: justify;
     
     border-radius: 30px;
     max-width: 30%;
     margin: 30px 40px;
     }
 
-    .mi-articulo {
+.inter h2{
+    font-family: "Bungee Spice", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    background-color: rgb(4, 69, 69);
+    padding: 20px 40px; 
+    border-radius: 10px; 
+    text-align: justify;
+        
+    border-radius: 30px;
+    max-width: 30%;
+    margin: 30px 40px;
         
     }
 
  
 
-    .nabla-<uniquifier> {
-      font-family: "Nabla", system-ui;
-      font-optical-sizing: auto;
-      font-weight: 400;
-      font-style: normal;
-      font-variation-settings:
-        "EDPT" 94,
-        "EHLT" 5;
-    }
+  
