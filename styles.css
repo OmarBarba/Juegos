@@ -56,13 +56,17 @@ h1 {
     margin: 30px 40px;
     }
 
+.inter{
+    display: flex;
+}
 .inter h2{
+    
     font-family: "Bungee Spice", system-ui;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
 
-    background-color: rgb(4, 69, 69);
+    background-color: rgb(45, 15, 128);
     padding: 20px 40px; 
     border-radius: 10px; 
     text-align: justify;
@@ -70,9 +74,24 @@ h1 {
     border-radius: 30px;
     max-width: 30%;
     margin: 30px 40px;
-        
-    }
+    
+}
+.inter p{
+    flex:1;
+    font-family: "Bungee Spice", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 
+    background-color: rgb(45, 15, 128);
+    padding: 20px 40px; 
+    border-radius: 10px; 
+    text-align: justify;
+        
+    border-radius: 30px;
+    max-width: 30%;
+    margin: 30px 40px;
+}
  
 
   
