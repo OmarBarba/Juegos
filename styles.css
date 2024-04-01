@@ -12,27 +12,31 @@ body {
 
 
 .contenido h1 {
+    font-family: "Bungee Spice", cursive; 
+    font-weight: 400; 
+
     background-color: #3407ff; 
     padding: 20px 40px; 
     border-radius: 10px; 
     text-align: center;
-    border-radius: 30px;
-    max-width: 80%;
+    border-radius: 40px;
+    max-width: 50%;
     margin: 40px auto;
-    font-family: "Bungee Spice", cursive; 
-    font-weight: 400; 
+    
 }
 .contenido p{
-    padding: 20px 40px; 
-    border-radius: 10px; 
-    text-align: center;
-    box-shadow: 5px 5px 10px rgba(190, 230, 14, 0.2);
-    background-color: rgb(22, 194, 206);
-    font-family: Roboto;
-}
-
-/* .bungee-spice-regular {
-    font-family: "Bungee Spice", cursive;
+    font-family: "Bungee Spice", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }   */
+
+    padding: 20px 40px; 
+    border-radius: 10px; 
+    text-align: justify;
+    box-shadow: 5px 5px 10px rgba(190, 230, 14, 0.2);
+    background-color: rgb(16, 17, 17);
+    border-radius: 30px;
+    max-width: 30%;
+    margin: 30px 40px;
+   
+}
+
