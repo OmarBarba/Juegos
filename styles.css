@@ -24,9 +24,12 @@ h1 {
     margin: 40px auto;
     
 }
+.inter, .contenido{
+    display: flex;
+}
+
 .contenido h2{
     font-family: "Bungee Spice", system-ui;
-    font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
 
@@ -60,13 +63,9 @@ h1 {
     z-index: 0;
     }
 
-.inter, .contenido{
-    display: flex;
-}
+
 .inter h2{
-    
     font-family: "Bungee Spice", system-ui;
-    font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
 
