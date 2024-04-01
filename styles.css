@@ -95,31 +95,24 @@ h1 {
     z-index: 0;
 }
  
-.Clue {
+.contenido {
+    text-align: center; /* Centrar los elementos hijos horizontalmente */
+}
+
+.Clue, .Ad {
+    margin-top: 20px; /* Añadir espacio entre los botones */
     font-family: "Bungee Spice", system-ui;
     font-weight: 300;
     font-style: normal;
-    
-    background-color: rgb(4, 69, 69); /* Color de fondo para el botón Clue */
+    background-color: rgb(4, 69, 69); /* Color de fondo para los botones */
     padding: 10px 20px; /* Espaciado interior */
     border: none; /* Sin borde */
     border-radius: 5px; /* Bordes redondeados */
     font-size: 16px; /* Tamaño del texto */
-    text-align: center
+    text-align: center; /* Centrar el texto dentro de los botones */
+    display: inline-block; /* Para que los botones se ajusten al contenido */
 }
 
-.Ad {
-    font-family: "Bungee Spice", system-ui;
-    font-weight: 300;
-    font-style: normal;
-    background-color:rgb(4, 69, 69); /* Color de fondo para el botón Adivina quien */
-     /* Color del texto */
-    padding: 10px 20px; Espaciado interior
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 16px; /* Tamaño del texto */
-    text-align: center
-}
 
 /* Estilos para el color de fondo alternativo cuando se hace clic en el botón Clue */
 .clue-clic {
