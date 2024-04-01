@@ -10,11 +10,12 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 document.getElementById("clue").addEventListener("click", function() {
     alert("¡Vamos a jugar Clue!");
-
+    window.location.href = "clue/mainclue.html";
 });
 
 document.getElementById("ad").addEventListener("click", function() {
     alert("¡Vamos a jugar Adivina quien!");
+    
 });
 
 document.getElementById("clue").addEventListener("click", function() {
@@ -32,3 +33,4 @@ document.getElementById("ad").addEventListener("click", function() {
         this.classList.remove("ad-clic");
     }, 500); 
 });
+
