@@ -14,3 +14,5 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("parrafo").textContent = contenido[currentIndex];
     }, 5000); // Cambiar el contenido cada 5 segundos (5000 milisegundos)
 });
+
+
