@@ -38,3 +38,18 @@ h1 {
     margin: 0 auto; /* Centrar horizontalmente */
     tex
 }
+
+.boton-regresar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.boton-regresar:hover {
+    background-color: #177ae4;
+}
