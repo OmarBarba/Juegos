@@ -15,6 +15,9 @@ document.addEventListener("DOMContentLoaded", function() {
         imagenElement.src = contenidoActual.imagen;
         parrafoElement.textContent = contenidoActual.texto;
         currentIndex = (currentIndex + 1) % contenido.length;
+        if (currentIndex === 0) {
+            mostrarVideo();
+        }
     }
     function mostrarVideo(){
         imagenElement.style.display = "none"; // Ocultar imagen
