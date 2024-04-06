@@ -2,9 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var contenido = [
         "Dentro del juego vas a encontrar 5 localidades, 5 personajes y 5 armas tu debes de detectar la forma por la que se encuentra al asecino.",
         "Despues de haber pasado por eso debes de pasar al area donde vas a decidir si vas a ir al mapa o a ver a los personajes y ver sus historias.",
-        "Teniendo ahora las reglas pasemos a la la historia todas las historias empiezan de la misma manera:",
-        "Estas en tú casa donde de pronto te pones a leer un libro antiguo que alguien avento afuera de tu casa el cual llevaba por nombre el asecinato casi perfecto dentro del Bosque Encantado. "
-        
+        "Teniendo ahora las reglas pasemos a la la historia todas las historias empiezan de la misma manera:"
 
     ];
 
@@ -22,12 +20,12 @@ document.addEventListener("DOMContentLoaded", function() {
             if (currentIndex === 0) {
                 clearInterval(intervalID);
             }
-            
-    var intervalID = setInterval(cambiarParrafo, 1000);
+        },500);
+    }    
+    var intervalID = setInterval(cambiarParrafo, 6000);
 
     botonSeleccion.addEventListener("click", function() {
         if (cambioCompletado) {
-            // Redirige a la página de selección solo si todos los párrafos ya se han mostrado una vez
             window.location.href = "seleccion.html";
         }
     });
