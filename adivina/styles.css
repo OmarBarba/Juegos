@@ -1,21 +1,20 @@
+/* styles.css */
 #game {
     text-align: center;
     margin: 50px auto;
     max-width: 500px;
   }
   
-  #character-image {
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    margin: 20px auto;
+  #choices {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
   }
   
-  #hints {
-    margin-bottom: 20px;
+  #choices button {
+    margin: 0 10px;
   }
-  
+   
   #result {
     margin-top: 20px;
     font-weight: bold;
