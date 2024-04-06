@@ -1,0 +1,21 @@
+[
+    {
+      "name": "Personaje 1",
+      "image": "image1.jpg",
+      "hints": [
+        "Es un hombre",
+        "Tiene cabello oscuro",
+        "Lleva gafas"
+      ]
+    },
+    {
+      "name": "Personaje 2",
+      "image": "image2.jpg",
+      "hints": [
+        "Es una mujer",
+        "Tiene cabello rubio",
+        "Lleva sombrero"
+      ]
+    },
+    // Agrega más personajes aquí
+  ]
