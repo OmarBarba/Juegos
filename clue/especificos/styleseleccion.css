@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Establece el color de fondo en negro */
+    color: white; /* Cambia el color del texto a blanco para mayor contraste */
+}
+
+#contenedor {
+    display: flex; /* Utiliza flexbox para alinear elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    height: 100vh; /* Opcional: ajusta la altura del contenedor según el viewport */
+}
+
+#parrafo {
+    font-size: 18px;
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
