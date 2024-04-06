@@ -24,6 +24,7 @@ h1 {
 #contenedor {
     text-align: center; /* Centrar el contenido */
     margin-top: 220px; /* Agrega 20px de espacio superior */
+    transition: opacity 1s ease;
 }
 
 #parrafo {
@@ -34,8 +35,16 @@ h1 {
     padding: 20px; /* Espaciado interior */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
-    max-width: 80%; /* Ancho máximo */
+    max-width: 600px; /* Ancho máximo */
     margin: 0 auto; /* Centrar horizontalmente */
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease, transform 0.5s ease; /* Agregar transición suave */
+}
+
+#parrafo.fade-out {
+    opacity: 0;
+    transform: translateY(40px);
 }
 
 .boton-regresar {
