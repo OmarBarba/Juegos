@@ -67,3 +67,59 @@ h1 {
     background-color: #177ae4;
     
 }
+
+.boton-select {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    position: absolute;
+    top: 550px; 
+    left: 660px;
+    
+}
+
+.boton-select::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    background-color: #e0e0e0;
+    border-radius: 0 0 5px 5px;
+    transition: width 0.3s ease;
+}
+
+.boton-select:hover::after {
+    width: 200%;
+    left: -50%;
+    transition: width 0.3s ease;
+}
+
+.boton-select svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+}
+
+.boton-select svg path {
+    fill: white;
+}
+
+.boton-select img,
+.boton-select object {
+    width: 200px; /* ajusta el ancho según sea necesario */
+    height: 200px; /* ajusta la altura según sea necesario */
+}
