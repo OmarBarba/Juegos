@@ -37,8 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
         videoElement.style.display = "block";
         videoElement.play();
         videoElement.addEventListener("ended", function() {
-            document.body.style.backgroundColor = "black";
-            videoElement.style.display = "none";
+            window.location.href = "seleccion.html";
         });
     }
 

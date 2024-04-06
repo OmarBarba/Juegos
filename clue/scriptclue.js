@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     botonSeleccion.addEventListener("click", function() {
         if (cambioCompletado) {
-            window.location.href = "especificos/seleccion.html";
+            window.location.href = "especificos/historia.html";
         }
     });
 });
