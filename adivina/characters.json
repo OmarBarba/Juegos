@@ -8,6 +8,7 @@
         "Lleva gafas"
       ]
     },
+    
     {
       "name": "Personaje 2",
       "image": "image2.jpg",
@@ -16,6 +17,6 @@
         "Tiene cabello rubio",
         "Lleva sombrero"
       ]
-    },
+    }
     // Agrega más personajes aquí
   ]

@@ -1,5 +1,8 @@
-// Cargar los datos de los personajes desde el archivo JSON
-const charactersData = []; // Aquí se almacenarán los datos de los personajes
+// script.js
+const charactersData = [];
+const questionElement = document.getElementById('question');
+const choicesElement = document.getElementById('choices');
+const resultElement = document.getElementById('result');
 
 fetch('characters.json')
   .then(response => response.json())
@@ -9,42 +12,46 @@ fetch('characters.json')
   })
   .catch(error => console.error('Error al cargar los datos:', error));
 
-let currentCharacter;
-const characterImageElement = document.getElementById('character-image');
-const hintsElement = document.getElementById('hints');
-const guessInput = document.getElementById('guess');
-const checkAnswerButton = document.getElementById('check-answer');
-const resultElement = document.getElementById('result');
+let remainingCharacters;
 
 function startGame() {
-  currentCharacter = charactersData[Math.floor(Math.random() * charactersData.length)];
-  characterImageElement.style.backgroundImage = `url(${currentCharacter.image})`;
-  hintsElement.innerHTML = '';
-  guessInput.value = '';
-  resultElement.innerHTML = '';
-  showNextHint();
+  remainingCharacters = [...charactersData];
+  askQuestion();
 }
 
-function showNextHint() {
-  if (currentCharacter.hints.length > 0) {
-    const hint = currentCharacter.hints.shift();
-    const hintElement = document.createElement('p');
-    hintElement.textContent = hint;
-    hintsElement.appendChild(hintElement);
-  } else {
-    hintsElement.innerHTML = '<p>No hay más pistas disponibles</p>';
-  }
+function askQuestion() {
+  const question = getNextQuestion();
+  questionElement.textContent = question;
+  choicesElement.innerHTML = '';
+
+  const yesButton = document.createElement('button');
+  yesButton.textContent = 'Sí';
+  yesButton.addEventListener('click', () => handleAnswer(true, question));
+  choicesElement.appendChild(yesButton);
+
+  const noButton = document.createElement('button');
+  noButton.textContent = 'No';
+  noButton.addEventListener('click', () => handleAnswer(false, question));
+  choicesElement.appendChild(noButton);
 }
 
-checkAnswerButton.addEventListener('click', () => {
-  const guess = guessInput.value.trim().toLowerCase();
-  const answer = currentCharacter.name.toLowerCase();
+function getNextQuestion() {
+  const firstCharacter = remainingCharacters[0];
+  const hints = firstCharacter.hints.filter(hint => !hint.startsWith('Es un'));
+  return hints.length > 0 ? hints[0] : 'Es un hombre';
+}
 
-  if (guess === answer) {
-    resultElement.innerHTML = '¡Correcto! 🎉';
+function handleAnswer(answer, question) {
+  remainingCharacters = remainingCharacters.filter(character => {
+    const isMatch = character.hints.some(hint => hint === question);
+    return answer ? isMatch : !isMatch;
+  });
+
+  if (remainingCharacters.length === 1) {
+    const answer = remainingCharacters[0].name;
+    resultElement.textContent = `¡Adiviné! Estabas pensando en ${answer}`;
     setTimeout(startGame, 2000);
   } else {
-    resultElement.innerHTML = 'Incorrecto 😞';
-    showNextHint();
+    askQuestion();
   }
-});
+}
