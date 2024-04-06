@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
         "Dentro del juego vas a encontrar 5 localidades, 5 personajes y 5 armas tu debes de detectar la forma por la que se encuentra al asecino.",
         "Despues de haber pasado por eso debes de pasar al area donde vas a decidir si vas a ir al mapa o a ver a los personajes y ver sus historias.",
         "Teniendo ahora las reglas pasemos a la historia todas las historias empiezan de la misma manera bien vamos a ello ahora presiona la puerta que apareció."
+
     ];
-    
     var currentIndex = 0;
     var parrafo = document.getElementById("parrafo");
     var botonSeleccion = document.getElementById("boton-select");
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     botonSeleccion.addEventListener("click", function() {
         if (cambioCompletado) {
-            window.location.href = "/clue/especificos/seleccion.html";
+            window.location.href = "especificos/seleccion.html";
         }
     });
 });
