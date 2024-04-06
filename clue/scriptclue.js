@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     botonSeleccion.addEventListener("click", function() {
         if (cambioCompletado) {
-            window.location.href = "seleccion.html";
+            window.location.href = "/clue/especificos/seleccion.html";
         }
     });
 });
