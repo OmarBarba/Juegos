@@ -12,34 +12,39 @@ h1 {
     font-family: "Workbench", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
+    font-size: 100px;
     font-style: normal;
     font-variation-settings:
-    "BLED" 0,
-    "SCAN" 0;
+    "BLED" 36,
+    "SCAN" 10;
     margin-top: 100px;
     text-align: center;
+    background-color: rgba(6, 37, 70, 0.5);
+    color: rgb(216, 163, 85);
     
 }
 
 #contenedor {
     text-align: center; /* Centrar el contenido */
-    margin-top: 220px; /* Agrega 20px de espacio superior */
+    margin-top: 120px;
     transition: opacity 1s ease;
 }
 
 #parrafo {
-    font-family: Arial, sans-serif; /* Cambiar la fuente */
-    font-size: 18px; /* Tamaño del texto */
-    color: #fff6f6; /* Color del texto */
-    background-color: #5e2197; /* Color de fondo */
-    padding: 20px; /* Espaciado interior */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
-    max-width: 600px; /* Ancho máximo */
-    margin: 0 auto; /* Centrar horizontalmente */
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+    color: azure;
+    background-color:rgba(6, 37, 70, .9);
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    max-width: 600px; 
+    margin: 0 auto; 
     opacity: 1;
     transform: translateY(0);
-    transition: opacity 1s ease, transform 0.5s ease; /* Agregar transición suave */
+    transition: opacity 1s ease, transform 0.5s ease; 
 }
 
 #parrafo.fade-out {
