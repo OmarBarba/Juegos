@@ -1,67 +1,50 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Obtener referencia a los elementos HTML
-    const preguntaElement = document.getElementById('pregunta');
-    const siButton = document.getElementById('si');
-    const noButton = document.getElementById('no');
-    const nuloButton = document.getElementById('nulo');
-    const resultadoElement = document.getElementById('resultado');
-  
-    let preguntas;
-    let preguntaActualIndex = 0;
-  
-    // Cargar preguntas desde el archivo JSON
-    function cargarPreguntas() {
-      fetch('preguntas.json') // Asegúrate de que la ruta sea correcta
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('No se pudo cargar el archivo JSON');
-          }
-          return response.json();
-        })
-        .then(data => {
-          preguntas = data; // Guardar preguntas
-          mostrarPregunta(); // Mostrar primera pregunta al cargar la página
-        })
-        .catch(error => {
-          console.error('Error de carga:', error);
-        });
+// Cargar el archivo JSON
+fetch('personajes.json')
+  .then(response => response.json())
+  .then(data => {
+    // Una vez que el archivo JSON está cargado, trabajamos con los datos
+    const characters = data;
+    let currentQuestionIndex = 0;
+
+    const questions = [
+      "¿Es un estudiante de Hogwarts?",
+      "¿Es un profesor en Hogwarts?",
+      "¿Es un mago oscuro?",
+      "¿Es un muggle?",
+      "¿Es un personaje principal?",
+      "¿Es un personaje secundario?"
+    ];
+
+    const questionElement = document.getElementById('question');
+    const yesBtn = document.getElementById('yesBtn');
+    const noBtn = document.getElementById('noBtn');
+
+    function askQuestion() {
+      questionElement.textContent = questions[currentQuestionIndex];
     }
-  
-    // Función para mostrar la pregunta actual
-    function mostrarPregunta() {
-      if (preguntaActualIndex < preguntas.length) {
-        preguntaElement.textContent = preguntas[preguntaActualIndex].pregunta;
+
+    function nextQuestion(answer) {
+      currentQuestionIndex++;
+      if (currentQuestionIndex >= questions.length) {
+        if (answer === 'yes') {
+          questionElement.textContent = "¡He adivinado! ¿Quieres jugar de nuevo?";
+        } else {
+          questionElement.textContent = "¡Vaya! No pude adivinar el personaje. ¿Quieres intentarlo de nuevo?";
+        }
+        currentQuestionIndex = 0;
       } else {
-        // Si no hay más preguntas, mostrar resultado final
-        resultadoElement.textContent = '¡No pude adivinar el personaje!';
+        askQuestion();
       }
     }
-  
-    // Avanzar a la siguiente pregunta
-    function siguientePregunta() {
-      preguntaActualIndex++;
-      mostrarPregunta();
-    }
-  
-    // Evento click para el botón "Sí"
-    siButton.addEventListener('click', function() {
-      // Avanzar a la siguiente pregunta
-      siguientePregunta();
+
+    yesBtn.addEventListener('click', () => {
+      nextQuestion('yes');
     });
-  
-    // Evento click para el botón "No"
-    noButton.addEventListener('click', function() {
-      // Avanzar a la siguiente pregunta
-      siguientePregunta();
+
+    noBtn.addEventListener('click', () => {
+      nextQuestion('no');
     });
-  
-    // Evento click para el botón "Nulo"
-    nuloButton.addEventListener('click', function() {
-      // Avanzar a la siguiente pregunta
-      siguientePregunta();
-    });
-  
-    // Llamar a la función para cargar las preguntas al cargar la página
-    cargarPreguntas();
-  });
-  
+
+    askQuestion();
+  })
+  .catch(error => console.error('Error al cargar el archivo JSON:', error));
