@@ -1,38 +1,169 @@
-[
+{
+    "personajes": [
     {
-    "name": "Perro 1",
-    "type": "perro",
-    "hints": [
-        "Slithe",
-        "Mueve la cola",
-        "Tiene orejas puntiagudas"
-    ]
+        "nombre": "Harry Potter",
+        "casa": "Gryffindor",
+        "varita": {
+        "madera": "Acebo",
+        "núcleo": "Pluma de Fénix",
+        "longitud": "11 pulgadas"
+        },
+        "patronus": "Ciervo",
+        "habilidades": ["Aparición", "Vuelo en escoba", "Expelliarmus"]
     },
     {
-    "name": "Gato 1",
-    "type": "gato",
-    "hints": [
-        "Maúlla",
-        "Caza ratones",
-        "Tiene bigotes"
-    ]
+        "nombre": "Ron Weasley",
+        "casa": "Gryffindor",
+        "varita": {
+        "madera": "Sauce",
+        "núcleo": "Pelo de unicornio",
+        "longitud": "12 pulgadas"
+        },
+        "patronus": "Jack Russell Terrier",
+        "habilidades": ["Ajedrez mágico", "Estrategia", "Encantamientos"]
     },
     {
-    "name": "Perro 2",
-    "type": "perro",
-    "hints": [
-        "Es un pastor",
-        "Tiene pelo largo",
-        "Es leal"
-    ]
+        "nombre": "Hermione Granger",
+        "casa": "Gryffindor",
+        "varita": {
+        "madera": "Vid",
+        "núcleo": "Fibra de corazón de dragón",
+        "longitud": "10 ¾ pulgadas"
+        },
+        "patronus": "Nutria",
+        "habilidades": ["Hechicería", "Ocultismo", "Astucia"]
     },
     {
-    "name": "Gato 2",
-    "type": "gato",
-    "hints": [
-        "Duerme mucho",
-        "Es independiente",
-        "Tiene ojos grandes"
-    ]
+        "nombre": "Luna Lovegood",
+        "casa": "Ravenclaw",
+        "varita": {
+        "madera": "Nogal",
+        "núcleo": "Fibra de corazón de dragón",
+        "longitud": "13 ½ pulgadas"
+        },
+        "patronus": "Liebre",
+        "habilidades": ["Intuición", "Magizoología", "Percepción"]
+    },
+    {
+        "nombre": "Albus Dumbledore",
+        "casa": "Gryffindor",
+        "varita": {
+        "madera": "Sauco",
+        "núcleo": "Pelo de cola de Thestral",
+        "longitud": "15 pulgadas"
+        },
+        "patronus": "Fénix",
+        "habilidades": ["Legilimancia", "Oclumancia", "Hechizos poderosos"]
+    },
+    {
+        "nombre": "Draco Malfoy",
+        "casa": "Slytherin",
+        "varita": {
+        "madera": "Espino",
+        "núcleo": "Pelo de unicornio",
+        "longitud": "10 pulgadas"
+        },
+        "patronus": null,
+        "habilidades": ["Parsel", "Legilimancia", "Duelo"]
+    },
+    {
+        "nombre": "Cedric Diggory",
+        "casa": "Hufflepuff",
+        "varita": {
+        "madera": "Cedro",
+        "núcleo": "Corazón de dragón",
+        "longitud": "12 ¼ pulgadas"
+        },
+        "patronus": null,
+        "habilidades": ["Vuelo en escoba", "Encantamientos", "Destreza física"]
+    },
+    {
+        "nombre": "Lord Voldemort",
+        "casa": "Slytherin",
+        "varita": {
+        "madera": "Tejo",
+        "núcleo": "Fibra de corazón de dragón",
+        "longitud": "13 ½ pulgadas"
+        },
+        "patronus": null,
+        "habilidades": ["Magia oscura", "Parsel", "Legeremancia"]
+    },
+    {
+        "nombre": "Bellatrix Lestrange",
+        "casa": "Slytherin",
+        "varita": {
+        "madera": "Nogal negro",
+        "núcleo": "Pelo de corazón de dragón",
+        "longitud": "12 ¾ pulgadas"
+        },
+        "patronus": null,
+        "habilidades": ["Cruciatus", "Legilimancia", "Duende"]
+    },
+    {
+        "nombre": "Nymphadora Tonks",
+        "casa": null,
+        "varita": {
+        "madera": "Fresno",
+        "núcleo": "Pelo de unicornio",
+        "longitud": "13 ¾ pulgadas"
+        },
+        "patronus": "Lobo",
+        "habilidades": ["Metamorfomagia", "Auror", "Defensa contra las artes oscuras"]
+    },
+    {
+        "nombre": "Cho Chang",
+        "casa": "Ravenclaw",
+        "varita": {
+        "madera": "Sicomoro",
+        "núcleo": "Fibra de corazón de dragón",
+        "longitud": "10 pulgadas"
+        },
+        "patronus": null,
+        "habilidades": ["Quidditch", "Encantamientos", "Buhos"]
+    },
+    {
+        "nombre": "Lucius Malfoy",
+        "casa": "Slytherin",
+        "varita": {
+        "madera": "Roble",
+        "núcleo": "Pelo de unicornio",
+        "longitud": "18 pulgadas"
+        },
+        "patronus": null,
+        "habilidades": ["Influencia política", "Duende", "Crueldad"]
+    },
+    {
+        "nombre": "Peter Pettigrew",
+        "casa": "Gryffindor",
+        "varita": {
+        "madera": "Abedul",
+        "núcleo": "Fibra de corazón de dragón",
+        "longitud": "9 ¼ pulgadas"
+        },
+        "patronus": null,
+        "habilidades": ["Animago", "Lealtad a Voldemort", "Traición"]
+    },
+    {
+        "nombre": "Minerva McGonagall",
+        "casa": null,
+        "varita": {
+        "madera": "Abeto",
+        "núcleo": "Fibra de corazón de dragón",
+        "longitud": "9 ½ pulgadas"
+        },
+        "patronus": "Gato atigrado",
+        "habilidades": ["Transfiguración", "Encantamientos", "Líder"]
+    },
+    {
+        "nombre": "Severus Snape",
+        "casa": "Slytherin",
+        "varita": {
+        "madera": "Sauce",
+        "núcleo": "Pluma de Fénix",
+        "longitud": "14 pulgadas"
+        },
+        "patronus": "Ciervo",
+        "habilidades": ["Legilimancia", "Oclumancia", "Poción"]
     }
-]
+    ]
+}      
