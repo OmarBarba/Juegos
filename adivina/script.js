@@ -7,6 +7,8 @@ fetch('personajes.json')
     let currentQuestionIndex = 0;
 
     const questions = [
+      "¿Es hombre?",
+      "¿Es mujer?",
       "¿Es un estudiante de Hogwarts?",
       "¿Es un profesor en Hogwarts?",
       "¿Es un mago oscuro?",
@@ -20,6 +22,8 @@ fetch('personajes.json')
     const noBtn = document.getElementById('noBtn');
     let userAnswers = []; 
     let characterValues = [];
+    let nombreValues =[];
+    let igualIndex = -1;
 
     function askQuestion() {
       questionElement.textContent = questions[currentQuestionIndex];
@@ -43,6 +47,8 @@ fetch('personajes.json')
 
     characters.forEach(character => {
       let values = [
+        character.hombre,
+        character.mujer,
         character.es_estudiante,
         character.es_profesor,
         character.es_mago_oscuro,
@@ -50,17 +56,64 @@ fetch('personajes.json')
         character.es_personaje_principal,
         character.es_personaje_secundario
       ];
+      let nombres = [
+        character.nombre
+      ];
+      nombreValues.push(nombres)
       characterValues.push(values);
+      console.log(characterValues);
+      console.log(nombreValues);
     });
 
-    yesBtn.addEventListener('click', () => {
-      nextQuestion('true');
+    
+    characterValues.forEach((values, index) => {
+      console.log(`Comparando personaje ${index + 1} con las respuestas del usuario:`);
+      console.log("Valores del personaje:", values);
+      console.log("Respuestas del usuario:", userAnswers);
+      
+      if (values.length !== userAnswers.length) {
+        console.log("Las matrices tienen longitudes diferentes, no son iguales.");
+        return; 
+      }
+    
+      
+      let areEqual = true; 
+      for (let i = 0; i < values.length; i++) {
+        if (values[i] !== userAnswers[i]) {
+          areEqual = false;
+          break;
+        }
+      }
+    
+      if (areEqual) {
+        console.log("Las matrices son iguales.");
+        igualIndex = index;
+      } else {
+        console.log("Las matrices no son iguales.");
+        
+      }
+
     });
 
-    noBtn.addEventListener('click', () => {
-      nextQuestion('false');
-    });
+    if (igualIndex !== -1){
+      const nombrePersonaje = nombreValues[igualIndex];
+      console.log(`El personaje que coincide con las respuestas del usuario es: ${nombrePersonaje}`);
+    } else {
+      console.log("Ninguna matriz fue igual.");
+    }
+    function agregaraJson(){
 
-    askQuestion();
-  })
-  .catch(error => console.error('Error al cargar el archivo JSON:', error));
+    }
+  }
+
+  yesBtn.addEventListener('click', () => {
+    nextQuestion(true); 
+  });
+
+  noBtn.addEventListener('click', () => {
+    nextQuestion(false); 
+  });
+
+  askQuestion();
+})
+.catch(error => console.error('Error al cargar el archivo JSON:', error));
