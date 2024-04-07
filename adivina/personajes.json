@@ -1,268 +1,47 @@
-{
-    "personajes": [
+[
     {
-        "nombre": "Harry Potter",
-        "casa": "Gryffindor",
-        "varita": {
-        "madera": "Acebo",
-        "núcleo": "Pluma de Fénix",
-        "longitud": "11 pulgadas"
-        },
-        "patronus": "Ciervo",
-        "habilidades": ["Aparición", "Vuelo en escoba", "Expelliarmus"]
+    "nombre": "Harry Potter",
+    "es_estudiante": true,
+    "es_profesor": false,
+    "es_mago_oscuro": false,
+    "es_muggle": false,
+    "es_personaje_principal": true,
+    "es_personaje_secundario": false
     },
     {
-        "nombre": "Ron Weasley",
-        "casa": "Gryffindor",
-        "varita": {
-        "madera": "Sauce",
-        "núcleo": "Pelo de unicornio",
-        "longitud": "12 pulgadas"
-        },
-        "patronus": "Jack Russell Terrier",
-        "habilidades": ["Ajedrez mágico", "Estrategia", "Encantamientos"]
+    "nombre": "Severus Snape",
+    "es_estudiante": false,
+    "es_profesor": true,
+    "es_mago_oscuro": true,
+    "es_muggle": false,
+    "es_personaje_principal": false,
+    "es_personaje_secundario": true
     },
     {
-        "nombre": "Hermione Granger",
-        "casa": "Gryffindor",
-        "varita": {
-        "madera": "Vid",
-        "núcleo": "Fibra de corazón de dragón",
-        "longitud": "10 ¾ pulgadas"
-        },
-        "patronus": "Nutria",
-        "habilidades": ["Hechicería", "Ocultismo", "Astucia"]
+    "nombre": "Lord Voldemort",
+    "es_estudiante": false,
+    "es_profesor": false,
+    "es_mago_oscuro": true,
+    "es_muggle": false,
+    "es_personaje_principal": false,
+    "es_personaje_secundario": false
     },
     {
-        "nombre": "Luna Lovegood",
-        "casa": "Ravenclaw",
-        "varita": {
-        "madera": "Nogal",
-        "núcleo": "Fibra de corazón de dragón",
-        "longitud": "13 ½ pulgadas"
-        },
-        "patronus": "Liebre",
-        "habilidades": ["Intuición", "Magizoología", "Percepción"]
+    "nombre": "Hermione Granger",
+    "es_estudiante": true,
+    "es_profesor": false,
+    "es_mago_oscuro": false,
+    "es_muggle": false,
+    "es_personaje_principal": true,
+    "es_personaje_secundario": false
     },
     {
-        "nombre": "Albus Dumbledore",
-        "casa": "Gryffindor",
-        "varita": {
-        "madera": "Sauco",
-        "núcleo": "Pelo de cola de Thestral",
-        "longitud": "15 pulgadas"
-        },
-        "patronus": "Fénix",
-        "habilidades": ["Legilimancia", "Oclumancia", "Hechizos poderosos"]
-    },
-    {
-        "nombre": "Draco Malfoy",
-        "casa": "Slytherin",
-        "varita": {
-        "madera": "Espino",
-        "núcleo": "Pelo de unicornio",
-        "longitud": "10 pulgadas"
-        },
-        "patronus": null,
-        "habilidades": ["Parsel", "Legilimancia", "Duelo"]
-    },
-    {
-        "nombre": "Cedric Diggory",
-        "casa": "Hufflepuff",
-        "varita": {
-        "madera": "Cedro",
-        "núcleo": "Corazón de dragón",
-        "longitud": "12 ¼ pulgadas"
-        },
-        "patronus": null,
-        "habilidades": ["Vuelo en escoba", "Encantamientos", "Destreza física"]
-    },
-    {
-        "nombre": "Lord Voldemort",
-        "casa": "Slytherin",
-        "varita": {
-        "madera": "Tejo",
-        "núcleo": "Fibra de corazón de dragón",
-        "longitud": "13 ½ pulgadas"
-        },
-        "patronus": null,
-        "habilidades": ["Magia oscura", "Parsel", "Legeremancia"]
-    },
-    {
-        "nombre": "Bellatrix Lestrange",
-        "casa": "Slytherin",
-        "varita": {
-        "madera": "Nogal negro",
-        "núcleo": "Pelo de corazón de dragón",
-        "longitud": "12 ¾ pulgadas"
-        },
-        "patronus": null,
-        "habilidades": ["Cruciatus", "Legilimancia", "Duende"]
-    },
-    {
-        "nombre": "Nymphadora Tonks",
-        "casa": null,
-        "varita": {
-        "madera": "Fresno",
-        "núcleo": "Pelo de unicornio",
-        "longitud": "13 ¾ pulgadas"
-        },
-        "patronus": "Lobo",
-        "habilidades": ["Metamorfomagia", "Auror", "Defensa contra las artes oscuras"]
-    },
-    {
-        "nombre": "Cho Chang",
-        "casa": "Ravenclaw",
-        "varita": {
-        "madera": "Sicomoro",
-        "núcleo": "Fibra de corazón de dragón",
-        "longitud": "10 pulgadas"
-        },
-        "patronus": null,
-        "habilidades": ["Quidditch", "Encantamientos", "Buhos"]
-    },
-    {
-        "nombre": "Lucius Malfoy",
-        "casa": "Slytherin",
-        "varita": {
-        "madera": "Roble",
-        "núcleo": "Pelo de unicornio",
-        "longitud": "18 pulgadas"
-        },
-        "patronus": null,
-        "habilidades": ["Influencia política", "Duende", "Crueldad"]
-    },
-    {
-        "nombre": "Peter Pettigrew",
-        "casa": "Gryffindor",
-        "varita": {
-        "madera": "Abedul",
-        "núcleo": "Fibra de corazón de dragón",
-        "longitud": "9 ¼ pulgadas"
-        },
-        "patronus": null,
-        "habilidades": ["Animago", "Lealtad a Voldemort", "Traición"]
-    },
-    {
-        "nombre": "Minerva McGonagall",
-        "casa": null,
-        "varita": {
-        "madera": "Abeto",
-        "núcleo": "Fibra de corazón de dragón",
-        "longitud": "9 ½ pulgadas"
-        },
-        "patronus": "Gato atigrado",
-        "habilidades": ["Transfiguración", "Encantamientos", "Líder"]
-    },
-    {
-            "nombre": "Severus Snape",
-            "casa": "Slytherin",
-            "varita": {
-            "madera": "Sauce",
-            "núcleo": "Pluma de Fénix",
-            "longitud": "14 pulgadas"
-        },
-        "patronus": "Ciervo",
-        "habilidades": ["Legilimancia", "Oclumancia", "Poción"]
-    },
-    {
-        "nombre": "Rubeus Hagrid",
-        "casa": "Gryffindor",
-        "varita": {
-        "madera": "Roble",
-        "núcleo": "Pluma de fénix",
-        "longitud": "16 pulgadas"
-        },
-        "patronus": null,
-        "habilidades": ["Cuidado de criaturas mágicas", "Herbología", "Fuerza física"]
-    },
-        {
-            "nombre": "Neville Longbottom",
-            "casa": "Gryffindor",
-            "varita": {
-            "madera": "Cerezo",
-            "núcleo": "Pluma de fénix",
-            "longitud": "13 pulgadas"
-            },
-            "patronus": null,
-            "habilidades": ["Herbología", "Duelo", "Valentía"]
-        },
-        {
-            "nombre": "Ginny Weasley",
-            "casa": "Gryffindor",
-            "varita": {
-            "madera": "Acebo",
-            "núcleo": "Cabello de unicornio",
-            "longitud": "9 ¾ pulgadas"
-            },
-            "patronus": null,
-            "habilidades": ["Quidditch", "Hechicería", "Duelo"]
-        },
-        {
-            "nombre": "Remus Lupin",
-            "casa": "Gryffindor",
-            "varita": {
-            "madera": "Olmo",
-            "núcleo": "Pelo de unicornio",
-            "longitud": "10 ¼ pulgadas"
-            },
-            "patronus": "Lobo",
-            "habilidades": ["Defensa contra las artes oscuras", "Transformaciones", "Liderazgo"]
-        },
-        {
-            "nombre": "Dolores Umbridge",
-            "casa": null,
-            "varita": {
-            "madera": "Acebo",
-            "núcleo": "Corazón de dragón",
-            "longitud": "8 pulgadas"
-            },
-            "patronus": null,
-            "habilidades": ["Autoritarismo", "Castigos crueles", "Falsedad"]
-        },
-        {
-            "nombre": "Alastor Moody",
-            "casa": null,
-            "varita": {
-            "madera": "Olmo",
-            "núcleo": "Ojo de Kneazle",
-            "longitud": "11 pulgadas"
-            },
-            "patronus": null,
-            "habilidades": ["Maestro de las maldiciones", "Auror", "Vigilancia constante"]
-        },
-        {
-            "nombre": "Gilderoy Lockhart",
-            "casa": null,
-            "varita": {
-            "madera": "Álamo",
-            "núcleo": "Pelo de Veela",
-            "longitud": "9 pulgadas"
-            },
-            "patronus": null,
-            "habilidades": ["Autopromoción", "Encantamientos", "Falsificación de habilidades"]
-        },
-        {
-            "nombre": "Sybill Trelawney",
-            "casa": null,
-            "varita": {
-            "madera": "Acebo",
-            "núcleo": "Fibra de corazón de dragón",
-            "longitud": "9 ½ pulgadas"
-            },
-            "patronus": null,
-            "habilidades": ["Adivinación", "Profecías", "Visión"]
-        },
-        {
-            "nombre": "Sirius Black",
-            "casa": "Gryffindor",
-            "varita": {
-            "madera": "Nogal",
-            "núcleo": "Pelo de corazón de dragón",
-            "longitud": "12 pulgadas"
-            },
-            "patronus": "Perro",
-            "habilidades": ["Animago", "Duelo", "Lealtad"]
-        }
-    ]
-}      
+    "nombre": "Sr. y Sra. Dursley",
+    "es_estudiante": false,
+    "es_profesor": false,
+    "es_mago_oscuro": false,
+    "es_muggle": true,
+    "es_personaje_principal": false,
+    "es_personaje_secundario": true
+    }
+]
