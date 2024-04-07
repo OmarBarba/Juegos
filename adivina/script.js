@@ -103,10 +103,24 @@ fetch('personajes.json')
       questionElement.style.display = 'none';
     } else {
       console.log("Ninguna matriz fue igual.");
-    }
-    function agregaraJson(){
+    
+      const nuevoNombre = prompt("No se encontró ninguna coincidencia. Por favor, ingrese el nombre del personaje correspondiente:");
 
+      if (nuevoNombre) {
+        
+        nombres.push(nuevoNombre);
+    
+        const resultElement = document.getElementById('resultElement');
+        resultElement.textContent = `El personaje que coincide con las respuestas del usuario es: ${nuevoNombre}`;
+    
+        
+        const questionsContainer = document.getElementById('questionsContainer');
+        questionsContainer.style.display = 'none';
+      } else {
+      console.log("El usuario canceló la operación.");
+      }  
     }
+    
   }
 
   yesBtn.addEventListener('click', () => {
