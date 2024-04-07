@@ -24,6 +24,7 @@ fetch('personajes.json')
     let characterValues = [];
     let nombreValues =[];
     let igualIndex = -1;
+    let bad = 0;
     
 
     function askQuestion() {
