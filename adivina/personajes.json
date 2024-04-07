@@ -164,17 +164,18 @@
         },
         "patronus": "Ciervo",
         "habilidades": ["Legilimancia", "Oclumancia", "Poción"]
-        {
-            "nombre": "Rubeus Hagrid",
-            "casa": "Gryffindor",
-            "varita": {
-            "madera": "Roble",
-            "núcleo": "Pluma de fénix",
-            "longitud": "16 pulgadas"
-            },
-            "patronus": null,
-            "habilidades": ["Cuidado de criaturas mágicas", "Herbología", "Fuerza física"]
+    },
+    {
+        "nombre": "Rubeus Hagrid",
+        "casa": "Gryffindor",
+        "varita": {
+        "madera": "Roble",
+        "núcleo": "Pluma de fénix",
+        "longitud": "16 pulgadas"
         },
+        "patronus": null,
+        "habilidades": ["Cuidado de criaturas mágicas", "Herbología", "Fuerza física"]
+    },
         {
             "nombre": "Neville Longbottom",
             "casa": "Gryffindor",
@@ -263,6 +264,5 @@
             "patronus": "Perro",
             "habilidades": ["Animago", "Duelo", "Lealtad"]
         }
-    }
     ]
 }      
