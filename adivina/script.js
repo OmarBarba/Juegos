@@ -119,7 +119,8 @@ fetch('personajes.json')
         questionElement.style.display = 'none';
         userAnswers.unshift(true);
         console.log(userAnswers);
-        reiniciarJuego();
+        enviarRespuestasAlServidor();
+        // reiniciarJuego();
         
       } else {
       console.log("El usuario canceló la operación.");
@@ -132,6 +133,28 @@ fetch('personajes.json')
     setTimeout(() => {
       location.reload(); 
     }, 2000);
+  }
+  
+  function enviarRespuestasAlServidor() {
+    const dataToSend = {
+      userAnswers: userAnswers 
+    };
+    fetch('guardar_respuestas.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(dataToSend)
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Error al enviar los datos al servidor.');
+      }
+      console.log('Los datos se han enviado exitosamente al servidor.');
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
   }
 
   yesBtn.addEventListener('click', () => {
