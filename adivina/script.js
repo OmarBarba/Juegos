@@ -24,6 +24,7 @@ fetch('personajes.json')
     let characterValues = [];
     let nombreValues =[];
     let igualIndex = -1;
+    
 
     function askQuestion() {
       questionElement.textContent = questions[currentQuestionIndex];
@@ -108,7 +109,7 @@ fetch('personajes.json')
 
       if (nuevoNombre) {
         
-        nombres.push(nuevoNombre);
+        nombreValues.push(nuevoNombre);
     
         const resultElement = document.getElementById('resultElement');
         resultElement.textContent = `El personaje que coincide con las respuestas del usuario es: ${nuevoNombre}`;
