@@ -12,32 +12,41 @@ body{
 .container {
   text-align: center;
   padding: 10px 0;
-  background-color: rgba(14, 166, 204, 0.8);
+  background-color: rgba(56, 43, 8, 0.8);
+  max-width: 50%;
+  margin: auto;
 }
 
 h1{
-    
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-family: "Griffy", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-p {
-  
-  color: #ffff;
+  color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: 50px;
   font-family: "Griffy", system-ui;
   font-weight: 400;
   font-style: normal;
+  font-size: 80px;
+  margin-bottom: 10px;
 }
 
 p {
-  font-size: 18px;
-  margin-bottom: 20px;
+color: #ffff;
+padding: 10px 20px;
+border-radius: 5px;
+font-size: 50px;
+font-family: "Griffy", system-ui;
+font-weight: 400;
+font-style: normal;
+font-size: 40px;
+margin-bottom: 10px;
+}
+
+.container2 {
+  width: auto; /* Ancho de la sección visible */
+  height: 700px; /* Alto de la sección visible */
+  overflow: hidden; /* Oculta el contenido que excede el tamaño del contenedor */
+}
+.container2 img {
+  width: 100%; /* Ancho de la imagen al 100% del contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
 }
 
