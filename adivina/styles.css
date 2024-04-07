@@ -24,7 +24,7 @@ h1{
   font-family: "Griffy", system-ui;
   font-weight: 400;
   font-style: normal;
-  font-size: 80px;
+  font-size: 50px;
   margin-bottom: 10px;
 }
 
@@ -36,7 +36,7 @@ font-size: 50px;
 font-family: "Griffy", system-ui;
 font-weight: 400;
 font-style: normal;
-font-size: 40px;
+font-size: 30px;
 margin-bottom: 10px;
 }
 
@@ -46,13 +46,15 @@ margin-bottom: 10px;
   overflow: hidden;
 }
 .container2 img {
-  width: 100%; /* Ancho de la imagen al 100% del contenedor */
-  height: auto; /* Altura automática para mantener la proporción */
+  width: 100%;
+  height: auto; 
 }
 
 .container3 {
+  color: #fff;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color:rgba(56, 43, 8, 0.8);
   text-align: center;
 }
