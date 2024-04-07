@@ -155,15 +155,114 @@
         "habilidades": ["Transfiguración", "Encantamientos", "Líder"]
     },
     {
-        "nombre": "Severus Snape",
-        "casa": "Slytherin",
-        "varita": {
-        "madera": "Sauce",
-        "núcleo": "Pluma de Fénix",
-        "longitud": "14 pulgadas"
+            "nombre": "Severus Snape",
+            "casa": "Slytherin",
+            "varita": {
+            "madera": "Sauce",
+            "núcleo": "Pluma de Fénix",
+            "longitud": "14 pulgadas"
         },
         "patronus": "Ciervo",
         "habilidades": ["Legilimancia", "Oclumancia", "Poción"]
+        {
+            "nombre": "Rubeus Hagrid",
+            "casa": "Gryffindor",
+            "varita": {
+            "madera": "Roble",
+            "núcleo": "Pluma de fénix",
+            "longitud": "16 pulgadas"
+            },
+            "patronus": null,
+            "habilidades": ["Cuidado de criaturas mágicas", "Herbología", "Fuerza física"]
+        },
+        {
+            "nombre": "Neville Longbottom",
+            "casa": "Gryffindor",
+            "varita": {
+            "madera": "Cerezo",
+            "núcleo": "Pluma de fénix",
+            "longitud": "13 pulgadas"
+            },
+            "patronus": null,
+            "habilidades": ["Herbología", "Duelo", "Valentía"]
+        },
+        {
+            "nombre": "Ginny Weasley",
+            "casa": "Gryffindor",
+            "varita": {
+            "madera": "Acebo",
+            "núcleo": "Cabello de unicornio",
+            "longitud": "9 ¾ pulgadas"
+            },
+            "patronus": null,
+            "habilidades": ["Quidditch", "Hechicería", "Duelo"]
+        },
+        {
+            "nombre": "Remus Lupin",
+            "casa": "Gryffindor",
+            "varita": {
+            "madera": "Olmo",
+            "núcleo": "Pelo de unicornio",
+            "longitud": "10 ¼ pulgadas"
+            },
+            "patronus": "Lobo",
+            "habilidades": ["Defensa contra las artes oscuras", "Transformaciones", "Liderazgo"]
+        },
+        {
+            "nombre": "Dolores Umbridge",
+            "casa": null,
+            "varita": {
+            "madera": "Acebo",
+            "núcleo": "Corazón de dragón",
+            "longitud": "8 pulgadas"
+            },
+            "patronus": null,
+            "habilidades": ["Autoritarismo", "Castigos crueles", "Falsedad"]
+        },
+        {
+            "nombre": "Alastor Moody",
+            "casa": null,
+            "varita": {
+            "madera": "Olmo",
+            "núcleo": "Ojo de Kneazle",
+            "longitud": "11 pulgadas"
+            },
+            "patronus": null,
+            "habilidades": ["Maestro de las maldiciones", "Auror", "Vigilancia constante"]
+        },
+        {
+            "nombre": "Gilderoy Lockhart",
+            "casa": null,
+            "varita": {
+            "madera": "Álamo",
+            "núcleo": "Pelo de Veela",
+            "longitud": "9 pulgadas"
+            },
+            "patronus": null,
+            "habilidades": ["Autopromoción", "Encantamientos", "Falsificación de habilidades"]
+        },
+        {
+            "nombre": "Sybill Trelawney",
+            "casa": null,
+            "varita": {
+            "madera": "Acebo",
+            "núcleo": "Fibra de corazón de dragón",
+            "longitud": "9 ½ pulgadas"
+            },
+            "patronus": null,
+            "habilidades": ["Adivinación", "Profecías", "Visión"]
+        },
+        {
+            "nombre": "Sirius Black",
+            "casa": "Gryffindor",
+            "varita": {
+            "madera": "Nogal",
+            "núcleo": "Pelo de corazón de dragón",
+            "longitud": "12 pulgadas"
+            },
+            "patronus": "Perro",
+            "habilidades": ["Animago", "Duelo", "Lealtad"]
+        }
     }
     ]
 }      
