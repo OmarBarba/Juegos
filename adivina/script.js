@@ -18,31 +18,47 @@ fetch('personajes.json')
     const questionElement = document.getElementById('question');
     const yesBtn = document.getElementById('yesBtn');
     const noBtn = document.getElementById('noBtn');
+    let userAnswers = []; 
+    let characterValues = [];
 
     function askQuestion() {
       questionElement.textContent = questions[currentQuestionIndex];
     }
 
     function nextQuestion(answer) {
+      userAnswers.push(answer);
       currentQuestionIndex++;
       if (currentQuestionIndex >= questions.length) {
-        if (answer === 'yes') {
-          questionElement.textContent = "¡He adivinado! ¿Quieres jugar de nuevo?";
-        } else {
-          questionElement.textContent = "¡Vaya! No pude adivinar el personaje. ¿Quieres intentarlo de nuevo?";
-        }
-        currentQuestionIndex = 0;
+        evaluateCharacter();
       } else {
         askQuestion();
       }
     }
+    
+    function evaluateCharacter() {
+      
+    const userResponses = userAnswers;
+    console.log("Respuestas del usuario:", userResponses);
+    
+
+    characters.forEach(character => {
+      let values = [
+        character.es_estudiante,
+        character.es_profesor,
+        character.es_mago_oscuro,
+        character.es_muggle,
+        character.es_personaje_principal,
+        character.es_personaje_secundario
+      ];
+      characterValues.push(values);
+    });
 
     yesBtn.addEventListener('click', () => {
-      nextQuestion('yes');
+      nextQuestion('true');
     });
 
     noBtn.addEventListener('click', () => {
-      nextQuestion('no');
+      nextQuestion('false');
     });
 
     askQuestion();
