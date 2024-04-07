@@ -103,6 +103,7 @@ fetch('personajes.json')
       const resultElement = document.getElementById('resultElement');
       resultElement.textContent = `El personaje que coincide con las respuestas del usuario es: ${nombrePersonaje}`;
       questionElement.style.display = 'none';
+      reiniciarJuego();
     } else {
       console.log("Ninguna matriz fue igual.");
     
@@ -118,11 +119,18 @@ fetch('personajes.json')
         
         const questionsContainer = document.getElementById('questionsContainer');
         questionsContainer.style.display = 'none';
+        reiniciarJuego();
       } else {
       console.log("El usuario canceló la operación.");
       }  
     }
     
+  }
+
+  function reiniciarJuego() {
+    setTimeout(() => {
+      location.reload(); 
+    }, 2000);
   }
 
   yesBtn.addEventListener('click', () => {
