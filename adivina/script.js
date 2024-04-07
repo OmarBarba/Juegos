@@ -115,11 +115,12 @@ fetch('personajes.json')
     
         const resultElement = document.getElementById('resultElement');
         resultElement.textContent = `El personaje que coincide con las respuestas del usuario es: ${nuevoNombre}`;
-    
-        
         const questionsContainer = document.getElementById('questionsContainer');
-        questionsContainer.style.display = 'none';
+        questionElement.style.display = 'none';
+        userAnswers.unshift(true);
+        console.log(userAnswers);
         reiniciarJuego();
+        
       } else {
       console.log("El usuario canceló la operación.");
       }  
