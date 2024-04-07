@@ -98,6 +98,9 @@ fetch('personajes.json')
     if (igualIndex !== -1){
       const nombrePersonaje = nombreValues[igualIndex];
       console.log(`El personaje que coincide con las respuestas del usuario es: ${nombrePersonaje}`);
+      const resultElement = document.getElementById('resultElement');
+      resultElement.textContent = `El personaje que coincide con las respuestas del usuario es: ${nombrePersonaje}`;
+      questionElement.style.display = 'none';
     } else {
       console.log("Ninguna matriz fue igual.");
     }
