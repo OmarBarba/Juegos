@@ -1,21 +1,40 @@
-/* styles.css */
-#game {
-    text-align: center;
-    margin: 50px auto;
-    max-width: 500px;
-  }
-  
-  #choices {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
- }
-  
-  #choices button {
-    margin: 0 10px;
-  }
 
-  #result {
-    margin-top: 20px;
-    font-weight: bold;
-  }
+body{
+  
+    margin: 0;
+    padding: 0;
+    background-image: url(/adivina/imagenes/fondo.jpeg); 
+    background-position: top center; 
+    background-attachment:scroll;
+    
+}
+
+.container {
+  text-align: center;
+  padding: 50px 0;
+  font-family: "Griffy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+h1{
+    background-color: rgba(204, 169, 14, 0.5);;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+p {
+  background-color: rgba(204, 169, 14, 0.5);;
+  color: #f5f1f1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 50px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+

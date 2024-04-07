@@ -1,0 +1,38 @@
+[
+    {
+    "name": "Perro 1",
+    "type": "perro",
+    "hints": [
+        "Slithe",
+        "Mueve la cola",
+        "Tiene orejas puntiagudas"
+    ]
+    },
+    {
+    "name": "Gato 1",
+    "type": "gato",
+    "hints": [
+        "Maúlla",
+        "Caza ratones",
+        "Tiene bigotes"
+    ]
+    },
+    {
+    "name": "Perro 2",
+    "type": "perro",
+    "hints": [
+        "Es un pastor",
+        "Tiene pelo largo",
+        "Es leal"
+    ]
+    },
+    {
+    "name": "Gato 2",
+    "type": "gato",
+    "hints": [
+        "Duerme mucho",
+        "Es independiente",
+        "Tiene ojos grandes"
+    ]
+    }
+]
