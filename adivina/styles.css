@@ -13,7 +13,7 @@ body{
   text-align: center;
   padding: 10px 0;
   background-color: rgba(56, 43, 8, 0.8);
-  max-width: 50%;
+  max-width: 80%;
   margin: auto;
 }
 
@@ -41,12 +41,18 @@ margin-bottom: 10px;
 }
 
 .container2 {
-  width: auto; /* Ancho de la sección visible */
-  height: 700px; /* Alto de la sección visible */
-  overflow: hidden; /* Oculta el contenido que excede el tamaño del contenedor */
+  width: auto; 
+  height: 350px;
+  overflow: hidden;
 }
 .container2 img {
   width: 100%; /* Ancho de la imagen al 100% del contenedor */
   height: auto; /* Altura automática para mantener la proporción */
 }
 
+.container3 {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
